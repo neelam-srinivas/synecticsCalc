@@ -1,0 +1,139 @@
+<section>
+  <div class="container">
+    <div class="angularCalc">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><img src="../assets/clock-rotate-left-solid.svg" width="20px"></span>
+          <input #inputBox (keyup)="calKeyValue(inputBox.value) " class="form-control"[(ngModel)]="calcValue"  type="text">
+          </div>
+        </div>
+        </div>
+        <!--Input Ends Here-->
+        <div class="row mt-3">
+          <div class="col-md-5">
+            <div class="row">
+              <!--Arithmetic Startshere-->
+              <div class="form-group col-md-8 col-sm-6 col-xs-6">
+                <div class="btn-group btn-group-lg w-100" role="group" aria-label="Large button group">
+                  <button type="button" class="btn btn-secondary border-right">Red</button>
+                  <button type="button" class="btn btn-secondary">Deg</button>
+                </div>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100">X!</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100">Inv</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">sin</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">In</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">TT</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">cos</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">log</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">e</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">tan</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">V</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">Ans</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">EXP</button>
+              </div>
+              <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary col-md-4 w-100">X<sup>y</sup></button>
+              </div>
+            </div>
+          </div>
+
+          <!--add, subtract, multiply, and divide numaric-->
+
+          <div class="col-md-5">
+              <div class="row">
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('(')" class="btn btn-light w-100">(</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput(')')" class="btn btn-light w-100">)</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('%')" class="btn btn-light w-100">%</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('7')"  class="btn btn-light w-100">7</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('8')" class="btn btn-light w-100">8</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('9')" class="btn btn-light w-100">9</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('4')" class="btn btn-light w-100">4</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('5')" class="btn btn-light w-100">5</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('6')" class="btn btn-light w-100">6</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('1')" class="btn btn-light w-100">1</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('2')" class="btn btn-light w-100">2</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('3')" class="btn btn-light w-100">3</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('0')" class="btn btn-light w-100">0</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-xs-6">
+                  <button (click)="valueToInput('.')" class="btn btn-light w-100">.</button>
+                </div>
+                <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                  <button id="equal" (click)="equalValue()" class="btn btn-primary w-100">=</button>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="row">
+              <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <button id="clear"(click)="clear()" class="btn btn-secondary w-100">AC</button>
+              </div>
+              <div class="form-group col-md-12 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100" (click)="valueToInput('/')">/</button>
+              </div>
+              <div class="form-group col-md-12 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100" (click)="valueToInput('*')">X</button>
+              </div>
+              <div class="form-group col-md-12 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100" (click)="valueToInput('-')">-</button>
+              </div>
+              <div class="form-group col-md-12 col-sm-6 col-xs-6">
+                <button class="btn btn-secondary w-100" (click)="valueToInput('+')">+</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
