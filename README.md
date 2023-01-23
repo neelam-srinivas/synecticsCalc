@@ -1,4 +1,8 @@
+# Author: Sree Neelam
+
 # AngularCalculator
+
+To Clone URL: https://github.com/neelam-srinivas/synecticsCalc.git
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
